@@ -1,33 +1,73 @@
-# Task-1- Car Price Prediction using Machine Learning
+# Task-1-DataScience-Intern
 
-## 📌 Project Overview
+# 🌸 Operations Performed in Iris Flower Classification
 
-This project builds a **Regression Model** to predict car prices based on features such as brand, horsepower, mileage, fuel type, and other specifications.
-It demonstrates the complete machine learning workflow from data preprocessing to model evaluation.
+## 1️⃣ Importing Libraries
 
-## 🛠️ Technologies Used
+The notebook begins by importing necessary libraries:
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
+* **Pandas** → data handling
+* **NumPy** → numerical operations
+* **Matplotlib / Seaborn** → visualization
+* **Scikit-learn** → machine learning model and evaluation
 
-## ⚙️ Workflow
+## 2️⃣ Loading the Dataset
 
-1. Data Collection
-2. Data Preprocessing
+* The Iris dataset is loaded (either using `sklearn.datasets` or a CSV file).
+* Initial data inspection using:
 
-   * Handling missing values
-   * Encoding categorical variables
-   * Feature scaling
-3. Exploratory Data Analysis (EDA)
-4. Model Training (Regression Models)
-5. Model Evaluation (MAE, MSE, R² Score)
+  * `.head()` → first 5 rows
+  * `.info()` → data types
+  * `.describe()` → statistical summary
 
-## 📊 Model Output
+The dataset contains:
 
-The model predicts the estimated price of a car based on given input features.
+* Sepal Length
+* Sepal Width
+* Petal Length
+* Petal Width
+* Species (Target variable)
 
+## 3️⃣ Data Preprocessing
 
-If you want, I can also generate a slightly more professional README suitable for GitHub submission.
+* Checking for missing values
+* Splitting data into:
+
+  * **X (features)** → measurements
+  * **y (target)** → species
+* Dividing dataset into:
+
+  * Training set
+  * Testing set using `train_test_split()`
+
+## 4️⃣ Model Training
+
+* A classification model (commonly Logistic Regression / KNN / Decision Tree) is created.
+* The model is trained using `.fit()` on training data.
+
+---
+
+## 5️⃣ Making Predictions
+
+* The trained model predicts flower species using `.predict()` on test data.
+
+## 6️⃣ Model Evaluation
+
+Model performance is evaluated using:
+
+* **Accuracy Score**
+* Confusion Matrix (if included)
+* Classification Report (Precision, Recall, F1-score)
+
+## 7️⃣ Visualization
+
+* Graphs such as scatter plots may be used to visualize:
+
+  * Feature relationships
+  * Class distribution
+
+# ✅ Overall Workflow
+
+Load Data → Preprocess → Train Model → Predict → Evaluate → Visualize
+
+If you want, I can also give a short viva-ready explanation (2–3 minute presentation format).
